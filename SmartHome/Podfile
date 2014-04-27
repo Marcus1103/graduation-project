@@ -1,0 +1,11 @@
+platform:ios, '5.0'
+
+pod 'AFNetworking' , '<2.0.0-RC1'
+pod 'AFHTTPRequestOperationLogger'
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'GPUImage'
+pod 'ViewDeck', '~> 2.3.1'
+pod 'UIActivityIndicator-for-SDWebImage'
+pod 'JSONModel'
+pod 'UI7Kit'
