@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+@class IIViewDeckController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (retain, nonatomic) UIViewController *centerController;
+@property (retain, nonatomic) UIViewController *leftController;
+
+- (IIViewDeckController*)generateControllerStack;
 
 @end
