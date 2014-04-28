@@ -34,12 +34,13 @@
 }
 
 - (IIViewDeckController*)generateControllerStack {
-    LeftViewController* leftController = [[LeftViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    LeftViewController *leftController = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:leftController];
     
     UIViewController *centerController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
-                                                                                    leftViewController:leftController
+                                                                                    leftViewController:navigationController
                                                                                    rightViewController:nil];
     deckController.rightSize = 100;
     

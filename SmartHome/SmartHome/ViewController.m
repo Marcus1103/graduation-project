@@ -15,27 +15,20 @@
 
 @implementation ViewController
 
-- (void)loadView {
-    [super loadView];
-    self.view.backgroundColor = [UIColor blueColor];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];;
-    
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
-    [button setTitle:@"test" forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:button];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];
+    UIButton *btnMore = nil;
+    btnMore = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 44)];
+//    btnMore.backgroundColor = kColor_NavigationBar;
+    [btnMore setImage:[UIImage imageNamed:@"menu_more.png"] forState:UIControlStateNormal];
+//    [btnMore addTarget:self action:@selector(buttonHighlight:) forControlEvents:UIControlEventTouchDown];
+//    [btnMore addTarget:self action:@selector(buttonTouchUpOutside:) forControlEvents:UIControlEventTouchUpOutside];
+//    [btnMore addTarget:self action:@selector(btnMoreAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barButtonItemMore = [[UIBarButtonItem alloc] initWithCustomView:btnMore];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 100, 100)];
-    [button setTitle:@"test" forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor redColor];
-    [self.view addSubview:button];
+    self.navigationItem.rightBarButtonItem = barButtonItemMore;
 }
 
 - (void)didReceiveMemoryWarning

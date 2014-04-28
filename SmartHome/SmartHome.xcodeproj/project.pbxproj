@@ -10,6 +10,8 @@
 		2C1E26E9190E39D600729608 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E26E7190E39D600729608 /* LeftViewController.m */; };
 		2C1E26EA190E39D600729608 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26E8190E39D600729608 /* LeftViewController.xib */; };
 		2C1E26EE190E46F000729608 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26ED190E46F000729608 /* ViewController.xib */; };
+		2C1E26F5190E60F900729608 /* menu_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26F3190E60F900729608 /* menu_more.png */; };
+		2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26F4190E60F900729608 /* menu_more@2x.png */; };
 		2C63B5F4190D488200372B1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F3190D488200372B1A /* Foundation.framework */; };
 		2C63B5F6190D488200372B1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F5190D488200372B1A /* CoreGraphics.framework */; };
 		2C63B5F8190D488200372B1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F7190D488200372B1A /* UIKit.framework */; };
@@ -41,6 +43,8 @@
 		2C1E26E7190E39D600729608 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		2C1E26E8190E39D600729608 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		2C1E26ED190E46F000729608 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2C1E26F3190E60F900729608 /* menu_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_more.png; sourceTree = "<group>"; };
+		2C1E26F4190E60F900729608 /* menu_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_more@2x.png"; sourceTree = "<group>"; };
 		2C63B5F0190D488200372B1A /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C63B5F3190D488200372B1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C63B5F5190D488200372B1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1E26F2190E60BC00729608 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				2C1E26F3190E60F900729608 /* menu_more.png */,
+				2C1E26F4190E60F900729608 /* menu_more@2x.png */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		2C63B5E7190D488200372B1A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 				2C1E26E7190E39D600729608 /* LeftViewController.m */,
 				2C1E26E8190E39D600729608 /* LeftViewController.xib */,
 				2C63B60B190D488200372B1A /* Images.xcassets */,
+				2C1E26F2190E60BC00729608 /* UIImage */,
 				2C63B5FA190D488200372B1A /* Supporting Files */,
 			);
 			path = SmartHome;
@@ -244,7 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1E26F5190E60F900729608 /* menu_more.png in Resources */,
 				2C1E26EE190E46F000729608 /* ViewController.xib in Resources */,
+				2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */,
 				2C63B60C190D488200372B1A /* Images.xcassets in Resources */,
 				2C1E26EA190E39D600729608 /* LeftViewController.xib in Resources */,
 				2C63B5FE190D488200372B1A /* InfoPlist.strings in Resources */,

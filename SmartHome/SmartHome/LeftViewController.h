@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
-@interface LeftViewController : UIViewController
+@interface LeftViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *roomTableView;
 
 @end
