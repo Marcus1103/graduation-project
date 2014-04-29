@@ -31,7 +31,7 @@
 
 #pragma mark - UITableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuseIdetify = @"SvTableViewCell";
+    static NSString *reuseIdetify = @"LeftTableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];

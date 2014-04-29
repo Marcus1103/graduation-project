@@ -27,6 +27,8 @@
 		2C63B61F190D488200372B1A /* SmartHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C63B61E190D488200372B1A /* SmartHomeTests.m */; };
 		2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */; };
 		2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8528190FA1CB001263CE /* home_setting@2x.png */; };
+		2CAE852E190FA5AF001263CE /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */; };
+		2CAE8530190FA5FD001263CE /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */; };
 		A2425B59D32F48C08D6585DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2C68588F04D43B7CECB98 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,9 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C1E26E6190E39D600729608 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		2C1E26E7190E39D600729608 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
-		2C1E26E8190E39D600729608 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		2C1E26E6190E39D600729608 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = ../LeftViewController.h; sourceTree = "<group>"; };
+		2C1E26E7190E39D600729608 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = ../LeftViewController.m; sourceTree = "<group>"; };
+		2C1E26E8190E39D600729608 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftViewController.xib; path = ../LeftViewController.xib; sourceTree = "<group>"; };
 		2C1E26ED190E46F000729608 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2C1E26F3190E60F900729608 /* menu_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_more.png; sourceTree = "<group>"; };
 		2C1E26F4190E60F900729608 /* menu_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_more@2x.png"; sourceTree = "<group>"; };
@@ -67,6 +69,9 @@
 		2C63B61E190D488200372B1A /* SmartHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHomeTests.m; sourceTree = "<group>"; };
 		2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_nav_leftButton@2x.png"; sourceTree = "<group>"; };
 		2CAE8528190FA1CB001263CE /* home_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_setting@2x.png"; sourceTree = "<group>"; };
+		2CAE852C190FA5AF001263CE /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		2EE2C68588F04D43B7CECB98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA076A9860184B73ABA93FCC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,10 +152,9 @@
 				2C63B608190D488200372B1A /* ViewController.h */,
 				2C63B609190D488200372B1A /* ViewController.m */,
 				2C1E26ED190E46F000729608 /* ViewController.xib */,
-				2C1E26E6190E39D600729608 /* LeftViewController.h */,
-				2C1E26E7190E39D600729608 /* LeftViewController.m */,
-				2C1E26E8190E39D600729608 /* LeftViewController.xib */,
 				2C63B60B190D488200372B1A /* Images.xcassets */,
+				2CAE852A190FA55F001263CE /* view */,
+				2CAE852B190FA55F001263CE /* viewController */,
 				2C1E26F2190E60BC00729608 /* UIImage */,
 				2C63B5FA190D488200372B1A /* Supporting Files */,
 			);
@@ -184,6 +188,26 @@
 				2C63B61B190D488200372B1A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CAE852A190FA55F001263CE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2CAE852C190FA5AF001263CE /* MainCollectionViewCell.h */,
+				2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */,
+				2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2CAE852B190FA55F001263CE /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C1E26E6190E39D600729608 /* LeftViewController.h */,
+				2C1E26E7190E39D600729608 /* LeftViewController.m */,
+				2C1E26E8190E39D600729608 /* LeftViewController.xib */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +292,7 @@
 				2C1E26EE190E46F000729608 /* ViewController.xib in Resources */,
 				2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */,
 				2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */,
+				2CAE8530190FA5FD001263CE /* MainCollectionViewCell.xib in Resources */,
 				2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */,
 				2C63B60C190D488200372B1A /* Images.xcassets in Resources */,
 				2C1E26EA190E39D600729608 /* LeftViewController.xib in Resources */,
@@ -325,6 +350,7 @@
 			files = (
 				2C63B60A190D488200372B1A /* ViewController.m in Sources */,
 				2C1E26E9190E39D600729608 /* LeftViewController.m in Sources */,
+				2CAE852E190FA5AF001263CE /* MainCollectionViewCell.m in Sources */,
 				2C63B604190D488200372B1A /* AppDelegate.m in Sources */,
 				2C63B600190D488200372B1A /* main.m in Sources */,
 			);
