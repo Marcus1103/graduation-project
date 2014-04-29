@@ -18,17 +18,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];
+    UIButton *btnLeft = nil;
+    btnLeft = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [btnLeft setImage:[UIImage imageNamed:@"home_nav_leftButton.png"] forState:UIControlStateNormal];
+    [btnLeft addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barButtonItemLeft = [[UIBarButtonItem alloc] initWithCustomView:btnLeft];
+    
+    self.navigationItem.leftBarButtonItem = barButtonItemLeft;
+    
     UIButton *btnMore = nil;
-    btnMore = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 44)];
-//    btnMore.backgroundColor = kColor_NavigationBar;
-    [btnMore setImage:[UIImage imageNamed:@"menu_more.png"] forState:UIControlStateNormal];
-//    [btnMore addTarget:self action:@selector(buttonHighlight:) forControlEvents:UIControlEventTouchDown];
-//    [btnMore addTarget:self action:@selector(buttonTouchUpOutside:) forControlEvents:UIControlEventTouchUpOutside];
-//    [btnMore addTarget:self action:@selector(btnMoreAction:) forControlEvents:UIControlEventTouchUpInside];
+    btnMore = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [btnMore setImage:[UIImage imageNamed:@"home_setting.png"] forState:UIControlStateNormal];
     UIBarButtonItem *barButtonItemMore = [[UIBarButtonItem alloc] initWithCustomView:btnMore];
     
     self.navigationItem.rightBarButtonItem = barButtonItemMore;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [[UICollectionViewCell alloc]init];
+    return cell;
+}
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 3;
 }
 
 - (void)didReceiveMemoryWarning
