@@ -19,18 +19,12 @@
 {
     [super viewDidLoad];
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];
-    UIButton *btnLeft = nil;
-    btnLeft = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [btnLeft setImage:[UIImage imageNamed:@"home_nav_leftButton.png"] forState:UIControlStateNormal];
-    [btnLeft addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *barButtonItemLeft = [[UIBarButtonItem alloc] initWithCustomView:btnLeft];
+
+    UIBarButtonItem *barButtonItemLeft = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_nav_leftButton.png"] style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
     
     self.navigationItem.leftBarButtonItem = barButtonItemLeft;
     
-    UIButton *btnMore = nil;
-    btnMore = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [btnMore setImage:[UIImage imageNamed:@"home_setting.png"] forState:UIControlStateNormal];
-    UIBarButtonItem *barButtonItemMore = [[UIBarButtonItem alloc] initWithCustomView:btnMore];
+    UIBarButtonItem *barButtonItemMore = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_setting.png"] style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];;
     
     self.navigationItem.rightBarButtonItem = barButtonItemMore;
 }

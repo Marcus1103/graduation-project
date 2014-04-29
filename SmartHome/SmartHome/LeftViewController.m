@@ -31,7 +31,13 @@
 
 #pragma mark - UITableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    static NSString *reuseIdetify = @"SvTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%d",indexPath.row];
     return cell;
 }
 

@@ -25,8 +25,8 @@
 		2C63B615190D488200372B1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F7190D488200372B1A /* UIKit.framework */; };
 		2C63B61D190D488200372B1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C63B61B190D488200372B1A /* InfoPlist.strings */; };
 		2C63B61F190D488200372B1A /* SmartHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C63B61E190D488200372B1A /* SmartHomeTests.m */; };
-		2CAE8525190F98E2001263CE /* home_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8524190F98E2001263CE /* home_setting.png */; };
 		2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */; };
+		2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8528190FA1CB001263CE /* home_setting@2x.png */; };
 		A2425B59D32F48C08D6585DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2C68588F04D43B7CECB98 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 		2C63B61A190D488200372B1A /* SmartHomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartHomeTests-Info.plist"; sourceTree = "<group>"; };
 		2C63B61C190D488200372B1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C63B61E190D488200372B1A /* SmartHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHomeTests.m; sourceTree = "<group>"; };
-		2CAE8524190F98E2001263CE /* home_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_setting.png; sourceTree = "<group>"; };
 		2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_nav_leftButton@2x.png"; sourceTree = "<group>"; };
+		2CAE8528190FA1CB001263CE /* home_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_setting@2x.png"; sourceTree = "<group>"; };
 		2EE2C68588F04D43B7CECB98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA076A9860184B73ABA93FCC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,8 +99,8 @@
 		2C1E26F2190E60BC00729608 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				2CAE8528190FA1CB001263CE /* home_setting@2x.png */,
 				2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */,
-				2CAE8524190F98E2001263CE /* home_setting.png */,
 				2C1E26F3190E60F900729608 /* menu_more.png */,
 				2C1E26F4190E60F900729608 /* menu_more@2x.png */,
 			);
@@ -266,10 +266,10 @@
 			files = (
 				2C1E26F5190E60F900729608 /* menu_more.png in Resources */,
 				2C1E26EE190E46F000729608 /* ViewController.xib in Resources */,
+				2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */,
 				2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */,
 				2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */,
 				2C63B60C190D488200372B1A /* Images.xcassets in Resources */,
-				2CAE8525190F98E2001263CE /* home_setting.png in Resources */,
 				2C1E26EA190E39D600729608 /* LeftViewController.xib in Resources */,
 				2C63B5FE190D488200372B1A /* InfoPlist.strings in Resources */,
 			);
