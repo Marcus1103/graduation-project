@@ -7,6 +7,7 @@
 //
 
 #import "LeftViewController.h"
+#import "IIViewDeckController.h"
 
 @interface LeftViewController ()
 
@@ -44,6 +45,11 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"changeRoom" object:nil userInfo:nil];
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

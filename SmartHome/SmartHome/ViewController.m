@@ -30,6 +30,8 @@
     self.navigationItem.rightBarButtonItem = barButtonItemMore;
     
     [self.roomCollectionView registerClass:[MainCollectionViewCell class] forCellWithReuseIdentifier:@"MainCollectionViewCell"];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor) name:@"changeRoom" object:nil];
 
 }
 
@@ -85,6 +87,15 @@
 // 定义section的边距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(10, 10, 0, 10);
+}
+
+- (void)changeColor {
+    srandom(time(0));
+    int i = random() % 255;
+    int j = random() % 255;
+    [UIView animateWithDuration:1.0 animations:^{
+        self.view.backgroundColor = [UIColor colorWithRed:11/255.0f green:j/255.0f blue:i/255.0f alpha:1];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
