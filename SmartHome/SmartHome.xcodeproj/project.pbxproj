@@ -29,6 +29,12 @@
 		2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8528190FA1CB001263CE /* home_setting@2x.png */; };
 		2CAE852E190FA5AF001263CE /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */; };
 		2CAE8530190FA5FD001263CE /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */; };
+		2CB2ABF71910E560007ADC12 /* TV.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2ABF61910E560007ADC12 /* TV.png */; };
+		2CB2ABF91910E601007ADC12 /* refrigerator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2ABF81910E601007ADC12 /* refrigerator.png */; };
+		2CB2ABFB1910E7B2007ADC12 /* microwaver.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2ABFA1910E7B2007ADC12 /* microwaver.png */; };
+		2CB2ABFD1910E879007ADC12 /* fan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2ABFC1910E879007ADC12 /* fan.png */; };
+		2CB2ABFF1910E8DF007ADC12 /* air-condition.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2ABFE1910E8DF007ADC12 /* air-condition.png */; };
+		2CB2AC031910EAA8007ADC12 /* bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2AC021910EAA8007ADC12 /* bulb.png */; };
 		A2425B59D32F48C08D6585DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2C68588F04D43B7CECB98 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +78,12 @@
 		2CAE852C190FA5AF001263CE /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
 		2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
 		2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		2CB2ABF61910E560007ADC12 /* TV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TV.png; sourceTree = "<group>"; };
+		2CB2ABF81910E601007ADC12 /* refrigerator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refrigerator.png; sourceTree = "<group>"; };
+		2CB2ABFA1910E7B2007ADC12 /* microwaver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microwaver.png; sourceTree = "<group>"; };
+		2CB2ABFC1910E879007ADC12 /* fan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fan.png; sourceTree = "<group>"; };
+		2CB2ABFE1910E8DF007ADC12 /* air-condition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "air-condition.png"; sourceTree = "<group>"; };
+		2CB2AC021910EAA8007ADC12 /* bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulb.png; sourceTree = "<group>"; };
 		2EE2C68588F04D43B7CECB98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA076A9860184B73ABA93FCC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +116,7 @@
 		2C1E26F2190E60BC00729608 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				2CB2ABF31910E3C8007ADC12 /* furniture */,
 				2CAE8528190FA1CB001263CE /* home_setting@2x.png */,
 				2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */,
 				2C1E26F3190E60F900729608 /* menu_more.png */,
@@ -210,6 +223,19 @@
 			path = viewController;
 			sourceTree = "<group>";
 		};
+		2CB2ABF31910E3C8007ADC12 /* furniture */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2AC021910EAA8007ADC12 /* bulb.png */,
+				2CB2ABFE1910E8DF007ADC12 /* air-condition.png */,
+				2CB2ABFC1910E879007ADC12 /* fan.png */,
+				2CB2ABFA1910E7B2007ADC12 /* microwaver.png */,
+				2CB2ABF81910E601007ADC12 /* refrigerator.png */,
+				2CB2ABF61910E560007ADC12 /* TV.png */,
+			);
+			path = furniture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,13 +316,19 @@
 			files = (
 				2C1E26F5190E60F900729608 /* menu_more.png in Resources */,
 				2C1E26EE190E46F000729608 /* ViewController.xib in Resources */,
+				2CB2ABFD1910E879007ADC12 /* fan.png in Resources */,
 				2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */,
+				2CB2ABF71910E560007ADC12 /* TV.png in Resources */,
 				2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */,
+				2CB2ABFF1910E8DF007ADC12 /* air-condition.png in Resources */,
 				2CAE8530190FA5FD001263CE /* MainCollectionViewCell.xib in Resources */,
 				2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */,
 				2C63B60C190D488200372B1A /* Images.xcassets in Resources */,
 				2C1E26EA190E39D600729608 /* LeftViewController.xib in Resources */,
+				2CB2ABF91910E601007ADC12 /* refrigerator.png in Resources */,
 				2C63B5FE190D488200372B1A /* InfoPlist.strings in Resources */,
+				2CB2AC031910EAA8007ADC12 /* bulb.png in Resources */,
+				2CB2ABFB1910E7B2007ADC12 /* microwaver.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,10 +37,26 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *reuseIdetify = @"MainCollectionViewCell";
     MainCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdetify forIndexPath:indexPath];
-
-    cell.imageView.image = [UIImage imageNamed:@"home_setting.png"];
-    cell.label.text = [NSString stringWithFormat:@"%d",indexPath.row];
-    cell.backgroundColor = [UIColor yellowColor];
+    if ((indexPath.row + 3 * indexPath.section) == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"TV"];
+    } else if ((indexPath.row + 3 * indexPath.section) == 1) {
+        cell.imageView.image = [UIImage imageNamed:@"refrigerator"];
+    } else if ((indexPath.row + 3 * indexPath.section) == 2) {
+        cell.imageView.image = [UIImage imageNamed:@"microwaver"];
+    } else if ((indexPath.row + 3 * indexPath.section) == 3) {
+        cell.imageView.image = [UIImage imageNamed:@"air-condition"];
+    } else if ((indexPath.row + 3 * indexPath.section) == 4) {
+        cell.imageView.image = [UIImage imageNamed:@"fan"];
+    } else if ((indexPath.row + 3 * indexPath.section) == 5) {
+        cell.imageView.image = [UIImage imageNamed:@"bulb"];
+    }
+    
+    cell.label.text = [NSString stringWithFormat:@""];
+    cell.contentView.layer.masksToBounds = YES;
+    cell.contentView.layer.cornerRadius = 20.0;
+    cell.contentView.layer.borderWidth = 5.0;
+    cell.contentView.layer.borderColor = [UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:1].CGColor;
+//    cell.backgroundColor = [UIColor yellowColor];
     return cell;
 }
 
@@ -56,7 +72,7 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 // 定义cell的size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize size = CGSizeMake(100, 50);
+    CGSize size = CGSizeMake(100, 100);
     return size;
 }
 
