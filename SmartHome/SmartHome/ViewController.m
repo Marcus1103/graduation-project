@@ -21,7 +21,7 @@
     [super viewDidLoad];
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self.viewDeckController action:@selector(toggleLeftView)];
 
-    UIBarButtonItem *barButtonItemLeft = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_nav_leftButton.png"] style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
+    UIBarButtonItem *barButtonItemLeft = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home.png"] style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
     
     self.navigationItem.leftBarButtonItem = barButtonItemLeft;
     
@@ -55,9 +55,15 @@
     cell.contentView.layer.masksToBounds = YES;
     cell.contentView.layer.cornerRadius = 20.0;
     cell.contentView.layer.borderWidth = 5.0;
-    cell.contentView.layer.borderColor = [UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:1].CGColor;
+    cell.contentView.layer.borderColor = [UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:0.9].CGColor;
 //    cell.backgroundColor = [UIColor yellowColor];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [UIView animateWithDuration:1.0 animations:^{
+        self.view.backgroundColor = [UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:1];
+    }];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -72,13 +78,13 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 // 定义cell的size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize size = CGSizeMake(100, 100);
+    CGSize size = CGSizeMake(90, 90);
     return size;
 }
 
 // 定义section的边距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(10, 0, 0, 0);
+    return UIEdgeInsetsMake(10, 10, 0, 10);
 }
 
 - (void)didReceiveMemoryWarning

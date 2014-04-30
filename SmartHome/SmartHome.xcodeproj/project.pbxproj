@@ -12,6 +12,8 @@
 		2C1E26EE190E46F000729608 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26ED190E46F000729608 /* ViewController.xib */; };
 		2C1E26F5190E60F900729608 /* menu_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26F3190E60F900729608 /* menu_more.png */; };
 		2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E26F4190E60F900729608 /* menu_more@2x.png */; };
+		2C34267F191106720015DA17 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C34267E191106720015DA17 /* home@2x.png */; };
+		2C3426811911068C0015DA17 /* home_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3426801911068C0015DA17 /* home_setting@2x.png */; };
 		2C63B5F4190D488200372B1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F3190D488200372B1A /* Foundation.framework */; };
 		2C63B5F6190D488200372B1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F5190D488200372B1A /* CoreGraphics.framework */; };
 		2C63B5F8190D488200372B1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C63B5F7190D488200372B1A /* UIKit.framework */; };
@@ -26,7 +28,6 @@
 		2C63B61D190D488200372B1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C63B61B190D488200372B1A /* InfoPlist.strings */; };
 		2C63B61F190D488200372B1A /* SmartHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C63B61E190D488200372B1A /* SmartHomeTests.m */; };
 		2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */; };
-		2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE8528190FA1CB001263CE /* home_setting@2x.png */; };
 		2CAE852E190FA5AF001263CE /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */; };
 		2CAE8530190FA5FD001263CE /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */; };
 		2CB2ABF71910E560007ADC12 /* TV.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB2ABF61910E560007ADC12 /* TV.png */; };
@@ -55,6 +56,8 @@
 		2C1E26ED190E46F000729608 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2C1E26F3190E60F900729608 /* menu_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_more.png; sourceTree = "<group>"; };
 		2C1E26F4190E60F900729608 /* menu_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_more@2x.png"; sourceTree = "<group>"; };
+		2C34267E191106720015DA17 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		2C3426801911068C0015DA17 /* home_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_setting@2x.png"; sourceTree = "<group>"; };
 		2C63B5F0190D488200372B1A /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C63B5F3190D488200372B1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C63B5F5190D488200372B1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,7 +77,6 @@
 		2C63B61C190D488200372B1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C63B61E190D488200372B1A /* SmartHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHomeTests.m; sourceTree = "<group>"; };
 		2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_nav_leftButton@2x.png"; sourceTree = "<group>"; };
-		2CAE8528190FA1CB001263CE /* home_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_setting@2x.png"; sourceTree = "<group>"; };
 		2CAE852C190FA5AF001263CE /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
 		2CAE852D190FA5AF001263CE /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
 		2CAE852F190FA5FD001263CE /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				2CB2ABF31910E3C8007ADC12 /* furniture */,
-				2CAE8528190FA1CB001263CE /* home_setting@2x.png */,
+				2C3426801911068C0015DA17 /* home_setting@2x.png */,
+				2C34267E191106720015DA17 /* home@2x.png */,
 				2CAE8526190F993A001263CE /* home_nav_leftButton@2x.png */,
 				2C1E26F3190E60F900729608 /* menu_more.png */,
 				2C1E26F4190E60F900729608 /* menu_more@2x.png */,
@@ -314,15 +317,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3426811911068C0015DA17 /* home_setting@2x.png in Resources */,
 				2C1E26F5190E60F900729608 /* menu_more.png in Resources */,
 				2C1E26EE190E46F000729608 /* ViewController.xib in Resources */,
 				2CB2ABFD1910E879007ADC12 /* fan.png in Resources */,
-				2CAE8529190FA1CB001263CE /* home_setting@2x.png in Resources */,
 				2CB2ABF71910E560007ADC12 /* TV.png in Resources */,
 				2CAE8527190F993A001263CE /* home_nav_leftButton@2x.png in Resources */,
 				2CB2ABFF1910E8DF007ADC12 /* air-condition.png in Resources */,
 				2CAE8530190FA5FD001263CE /* MainCollectionViewCell.xib in Resources */,
 				2C1E26F6190E60F900729608 /* menu_more@2x.png in Resources */,
+				2C34267F191106720015DA17 /* home@2x.png in Resources */,
 				2C63B60C190D488200372B1A /* Images.xcassets in Resources */,
 				2C1E26EA190E39D600729608 /* LeftViewController.xib in Resources */,
 				2CB2ABF91910E601007ADC12 /* refrigerator.png in Resources */,
