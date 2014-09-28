@@ -23,6 +23,7 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor greenColor];
 
     UIBarButtonItem *barButtonItemLeft = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home.png"] style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
     
