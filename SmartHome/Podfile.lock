@@ -3,9 +3,9 @@ PODS:
     - AFNetworking (~> 1.0)
   - AFNetworking (1.3.4)
   - cdebug (0.1.1)
-  - FoundationExtension/FoundationExtension (0.46):
+  - FoundationExtension/FoundationExtension (0.55):
     - cdebug (~> 0.1)
-  - FoundationExtension/UIKitExtension (0.46):
+  - FoundationExtension/UIKitExtension (0.55):
     - cdebug (~> 0.1)
     - FoundationExtension/FoundationExtension
   - GIKPopoverBackgroundView/Core (0.0.1)
@@ -167,19 +167,19 @@ DEPENDENCIES:
   - ViewDeck (~> 2.3.1)
 
 SPEC CHECKSUMS:
-  AFHTTPRequestOperationLogger: c6ad1f4bfd64fc9a8dbe94c8489420d195f15cb0
-  AFNetworking: e403d4333a4e1956cb3fe42364c3c879f820c9a0
-  cdebug: e577d5f535bd9c39e91e269bc749b4bbd2e22c99
-  FoundationExtension: ac829a1353cfa6c4a1b157d365425b862aa04796
-  GIKPopoverBackgroundView: 6163da8cb906689732e5900c1484e6a411ce4da3
-  GPUImage: f9b32e12350792a630e596ffc7b050bea3662670
-  JSONModel: 1ce27c7d59de0ada0048e64f20006ce02e9ce73d
-  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
-  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
-  SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
-  UI7Kit: fe8ed7fc5b13b3ecf66fdaf42c07f17d5e648206
-  UIActivityIndicator-for-SDWebImage: 6ab42f95a4066339e2338c3326679a526ce2ef64
-  UIKitResources: 5237a3f907b433a70e7f0e7c50c4dc88c080b5f8
-  ViewDeck: 2cdc67c4b41a10cafc7556b982f028409e33604d
+  AFHTTPRequestOperationLogger: 890afab1adb178314d33c4de9d2aa5a42cc594b9
+  AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
+  cdebug: 0404c00c53512b97358e13340b59dd465e4389ac
+  FoundationExtension: fe052768833ab70136a8bf09f48b42a3889235ec
+  GIKPopoverBackgroundView: 459aef9b0a17d10b831b1714f2d686e72bbcc63c
+  GPUImage: ac2bde5f4dbea02a81ced6313964cec1f2043ca9
+  JSONModel: 62ea96b49ea18a8b91ef89c249dba291d8601d82
+  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
+  SevenSwitch: 70af67d75bc2e477d45a984cf1f3123564b04eee
+  UI7Kit: 5fe658e3e185618f3968a4d0d8f9b28c2ee38f3e
+  UIActivityIndicator-for-SDWebImage: d9e46f1592d04cfbeda67bb6d7bba5348558697b
+  UIKitResources: 834daec56f3546164cef79034ed9efc3bf6d2512
+  ViewDeck: 654a493fc83928892ce483dea08a5302180aafce
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1
